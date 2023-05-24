@@ -11,3 +11,22 @@
     @apply bg-light text-dark;
   }
 }
+
+@layer components {
+  .projectLink:hover hr {
+    border-top: 2px solid #fff;
+    opacity: 1;
+  }
+  .projectLink svg {
+    transition: all 100ms ease-in-out;
+  }
+  .projectLink:hover svg {
+    transform: rotate(90deg);
+  }
+  .projectLink:hover .projectLinkTitle {
+    color: #fff;
+  }
+  .projectLink:hover .projectLinkDesc {
+    opacity: 0.4;
+  }
+}
