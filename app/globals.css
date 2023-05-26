@@ -29,4 +29,19 @@
   .projectLink:hover .projectLinkDesc {
     opacity: 0.4;
   }
+  .alterLink h1 {
+    transition: all 200ms ease-in-out;
+  }
+  .alterLink:hover {
+    border-bottom: 1px solid #fff;
+  }
+  .alterLink:hover h1 {
+    margin-left: 15px;
+  }
+  .alterLink p {
+    transition: all 200ms ease-in-out;
+  }
+  .alterLink:hover p {
+    opacity: 1;
+  }
 }

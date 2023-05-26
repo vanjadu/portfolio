@@ -9,7 +9,7 @@ interface SingleProjectProps {
 
 const SingleProject = ({ title, description, link }: SingleProjectProps) => {
   return (
-    <Link href={link} className='w-full'>
+    <Link href={link} target='_blank' className='w-full'>
       <div className='w-full flex flex-col items-start justify-between gap-6 transition projectLink bg-lightDark px-4 lg:px-8 py-3 rounded-xl'>
         <div className='w-full flex items-center justify-between'>
           <div className='flex flex-col items-start gap-1'>

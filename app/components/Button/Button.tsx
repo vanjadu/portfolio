@@ -4,12 +4,14 @@ import { FiCornerDownLeft } from 'react-icons/fi'
 interface ButtonProps {
   text: string
   light?: boolean
+  link?: string
 }
 
-const Button = ({ text, light }: ButtonProps) => {
+const Button = ({ text, light, link }: ButtonProps) => {
   return (
     <Link
-      href='/'
+      href={link ? link : '/'}
+      scroll={false}
       className={`${
         light ? 'text-light' : 'text-dark'
       } py-2 px-6 rounded-full border ${

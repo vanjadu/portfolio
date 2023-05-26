@@ -13,7 +13,7 @@ const Logo = ({ dark }: LogoProps) => {
         alt='Vanja Dulikravic Logo'
         width={50}
         height={50}
-        className={`${dark ? 'filter invert opacity-80' : ''}`}
+        className={`${dark && 'filter invert opacity-80'}`}
       />
     </Link>
   )

@@ -1,3 +1,4 @@
+import ClientComponent from './components/ClientComponent'
 import HomeAbout from './components/HomeSection/HomeAbout'
 import HomeCards from './components/HomeSection/HomeCards'
 import HomeContact from './components/HomeSection/HomeContact'
@@ -10,7 +11,9 @@ export default function Home() {
   return (
     <main>
       <HomeHero />
-      <HomeCards />
+      <ClientComponent>
+        <HomeCards />
+      </ClientComponent>
       <HomeAbout />
       <HomeServices />
       <HomeMainProject />

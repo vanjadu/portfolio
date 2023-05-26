@@ -53,9 +53,9 @@ const InitialLoader = () => {
 
   // if (loading) {
   return (
-    <AnimatePresence mode='wait'>
+    <>
       <MotionDiv
-        className='fixed z-30 top-0 left-0 w-full h-screen bg-dark p-4 lg:p-12 flex items-start justify-end'
+        className='fixed z-50 top-0 left-0 w-full h-screen bg-dark p-4 lg:p-12 flex items-start justify-end'
         variants={loaderVariants}
         initial='initial'
         animate='animate'
@@ -65,12 +65,12 @@ const InitialLoader = () => {
         </p>
       </MotionDiv>
       <MotionDiv
-        className='fixed z-20 top-0 left-0 w-full h-screen bg-light'
+        className='fixed z-40 top-0 left-0 w-full h-screen bg-light'
         variants={loaderVariantsTwo}
         initial='initial'
         animate='animate'
       ></MotionDiv>
-    </AnimatePresence>
+    </>
   )
   // } else {
   //   return null
